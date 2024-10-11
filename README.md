@@ -17,17 +17,20 @@ If you don't have Rust installed, you can follow the instructions on the [offici
 ```bash
 git clone https://github.com/qquuaanntt/listener.git
 cd listener
+```
 
 ## Step 3: Set Up Environment Variables
 `listener` requires a `.env` file to store configuration values. Create a `.env` file in the root of the `listener` directory:
 
 ```bash
 touch .env
+```
 
 Add the following line:
 
 ```env
 WS_URL="ws://your-websocket-url:8546"
+```
 
 Replace `"ws://your-websocket-url:8546"` with the URL of your Ethereum WebSocket provider.
 
@@ -35,10 +38,12 @@ Replace `"ws://your-websocket-url:8546"` with the URL of your Ethereum WebSocket
 
 ```bash
 cargo build
+```
 
 ## Step 5: Run `listener`
 
 ```bash
 cargo run
+```
 
 If everything is set up correctly, you should see logs in your terminal indicating that you are connected to the Ethereum node and processing transactions.
